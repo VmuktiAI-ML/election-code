@@ -17,7 +17,7 @@ WORKDIR /app
 # Copy only the necessary module and files
 COPY requirements.txt .
 COPY Person_counting_outside/ ./Person_counting_outside/
-
+COPY beep_counting/ 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
